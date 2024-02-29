@@ -10,8 +10,15 @@
 console.log(abc("sandhiya"));*/
 
 
-let abc=function(a)
+/*let abc=function(a)
 {
     return "hello "+a;
 }
-console.log(abc("sandy"));
+console.log(abc("sandy"));*/
+
+//arrow function
+let abc=()=>{
+    console.log ("hello");
+}
+abc;
+
