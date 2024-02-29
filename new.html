@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate Names</title>
+    <style>
+        label{
+            font-size: 50px;
+        }
+        input{
+            font-size: 50px;
+            color:blue ;
+        }
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_OLLpP3UC4KcdqFb9EYXQJZ4mc65waf1fT5DGXj04QQ&s');
+            background-size: cover;
+        }
+        #res{
+            color: blueviolet;
+            font-size: 50px;
+        }
+        button{
+            font-size: 25px;
+            margin-top:20px; ;
+        }
+    </style>
+</head>
+<body>
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName"><br>
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName"><br>
+    <button onclick="hello()">click me</button>
+   <h4 id="res"></h4>
+
+    <script> 
+        function hello() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var fullName = firstName + " " + lastName;
+            document.getElementById("res").innerText = "Full Name: " + fullName;
+            //document.getElementById("res").style.color="violet";
+            
+        }
+    </script>
+</body>
+</html>
